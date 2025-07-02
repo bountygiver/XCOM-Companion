@@ -41,6 +41,7 @@ class DamageCalculatorPage extends AppPage {
         const resultTable = template.querySelector("#damage-result-table > tbody");
 
         let culmchance = 1;
+        let expectedDamage = 0;
         for (const value of Object.keys(this.currentResults)) {
             let tr = document.createElement("tr");
             let addedCulm = false;
@@ -76,9 +77,12 @@ class DamageCalculatorPage extends AppPage {
                 }
                 resultTable.append(tr);
                 tr = document.createElement("tr");
+                expectedDamage += this.currentResults[value][dr] * parseInt(value);
             }
         }
-
+        template.querySelector("#damage-result-expected").append(expectedDamage.toLocaleString(undefined, {
+           maximumFractionDigits: 2,
+          }));
         Modal.open(template, null, true);
     }
 
