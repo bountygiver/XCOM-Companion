@@ -1,0 +1,4930 @@
+{
+    "groups": {
+        "enemy_group_mechtoid": [ "enemy_mechtoid" ],
+        "enemy_group_exalt": [ "enemy_exalt_heavy", "enemy_exalt_medic", "enemy_exalt_operative", "enemy_exalt_sniper" ],
+        "enemy_group_exalt_elite": [ "enemy_exalt_elite_heavy", "enemy_exalt_elite_medic", "enemy_exalt_elite_operative", "enemy_exalt_elite_sniper" ]
+    },
+    "deployments": [
+        {
+            "alien_research": 0,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.76,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.24,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 1,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 28,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.29,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.62,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.37,
+                    "terror_spawn": 0.25,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.35,
+                    "terror_spawn": 0.13,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 56,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.21,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.47,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.26,
+                    "terror_spawn": 0.19,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.2,
+                    "terror_spawn": 0.09,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.17,
+                    "terror_spawn": 0.25,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 84,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.12,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.4,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.26,
+                    "terror_spawn": 0.17,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.19,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.16,
+                    "terror_spawn": 0.21,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.21,
+                    "terror_spawn": 0.09,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 112,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.32,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.22,
+                    "terror_spawn": 0.14,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.16,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.15,
+                    "terror_spawn": 0.17,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.22,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.24,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 140,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.29,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.2,
+                    "terror_spawn": 0.11,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.16,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.13,
+                    "terror_spawn": 0.15,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.2,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.21,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.09,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 168,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.26,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.11,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.15,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.12,
+                    "terror_spawn": 0.13,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.19,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.19,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.2,
+                    "terror_spawn": 0.11,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 196,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.26,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.13,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.14,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.17,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.18,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.17,
+                    "terror_spawn": 0.1,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 224,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.2,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.11,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.13,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.15,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.14,
+                    "terror_spawn": 0.09,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.02,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.14,
+                    "terror_spawn": 0.09,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 252,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.02,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.2,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.12,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.15,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.02,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.02,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.14,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 280,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.19,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.14,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                },
+                "enemy_sectopod": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectopod"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 308,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.18,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.14,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.02,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                },
+                "enemy_sectopod": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectopod"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_ethereal": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_ethereal"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 336,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.02,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.18,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.07,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.13,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.05,
+                    "terror_spawn": 0.02,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.06,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.11,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                },
+                "enemy_sectopod": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectopod"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_ethereal": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_ethereal"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 364,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.02,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.17,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.13,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.16670000000000001,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                },
+                "enemy_sectopod": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectopod"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_ethereal": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_ethereal"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "alien_research": 392,
+            "aliens": {
+                "enemy_sectoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ]
+                },
+                "enemy_drone": {
+                    "normal_spawn": 0.02,
+                    "terror_spawn": 0,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_chryssalid": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.17,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_chryssalid"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_zombie"
+                        }
+                    ]
+                },
+                "enemy_floater": {
+                    "normal_spawn": 0.04,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ]
+                },
+                "enemy_thin_man": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_thin_man"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_thin_man"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_thin_man"
+                        }
+                    ]
+                },
+                "enemy_seeker": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_seeker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_cyberdisc": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.13,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_cyberdisc"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_mechtoid": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_muton_berserker": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_berserker"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_floater"
+                        }
+                    ]
+                },
+                "enemy_sectoid_commander": {
+                    "normal_spawn": 0.08,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectoid_commander"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_outsider"
+                        }
+                    ]
+                },
+                "enemy_group_mechtoid": {
+                    "normal_spawn": 0.06,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_sectoid_commander"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_drone"
+                        }
+                    ]
+                },
+                "enemy_heavy_floater": {
+                    "normal_spawn": 0.09,
+                    "terror_spawn": 0.07,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_chryssalid"
+                        }
+                    ]
+                },
+                "enemy_group_exalt": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt"
+                        }
+                    ]
+                },
+                "enemy_group_exalt_elite": {
+                    "normal_spawn": 0,
+                    "terror_spawn": 0.05,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_exalt_elite_operative"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_group_exalt_elite"
+                        }
+                    ]
+                },
+                "enemy_muton_elite": {
+                    "normal_spawn": 0.1,
+                    "terror_spawn": 0.04,
+                    "supports": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.25,
+                            "alien": "enemy_muton"
+                        },
+                        {
+                            "chance": 0.25,
+                            "alien": "enemy_muton_berserker"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_muton_elite"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.4,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_heavy_floater"
+                        },
+                        {
+                            "chance": 0.3,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                },
+                "enemy_sectopod": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0.08,
+                    "supports": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_drone"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_sectopod"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_seeker"
+                        }
+                    ]
+                },
+                "enemy_ethereal": {
+                    "normal_spawn": 0.03,
+                    "terror_spawn": 0.03,
+                    "supports": [
+                        {
+                            "chance": 0.67,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.33,
+                            "alien": "enemy_heavy_floater"
+                        }
+                    ],
+                    "adjutant": [
+                        {
+                            "chance": 1,
+                            "alien": "enemy_ethereal"
+                        }
+                    ],
+                    "navigators": [
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_muton_elite"
+                        },
+                        {
+                            "chance": 0.5,
+                            "alien": "enemy_mechtoid"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

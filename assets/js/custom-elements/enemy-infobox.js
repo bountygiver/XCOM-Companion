@@ -395,6 +395,39 @@ class EnemyInfobox extends HTMLElement {
         unitTypesContainer.textContent = types.join(", ");
     }
 
+    _createFollowerLeader(alienName) {
+        const div = document.createElement("div");
+        div.setAttribute("data-page-on-click", "enemy-display-page");
+        div.setAttribute("data-pagearg-enemy-id", alienName);
+        const alienData = DataHelper.enemies[alienName];
+        if (alienData) {
+            Utils.appendElement(div, "div", alienData.name, { attributes: { "data-page-on-click": "enemy-display-page", "data-pagearg-enemy-id": alienName, "style": "cursor: pointer;" } });
+        }
+
+        return div;
+    }
+
+    _populateEncounters(template, enemyName) {
+        const leadersSelector = template.querySelector("#enemy-spawn-leaders");
+        const followerSelector = template.querySelector("#enemy-spawn-followers");
+
+        const info = DataHelper.deploymentPossibleFollowerLeader(enemyName, this.alienResearch || null);
+
+        if (info.leaders.length) {
+            leadersSelector.textContent = "";
+            for (const alienName in info.leaders) {
+                leadersSelector.appendChild(this._createFollowerLeader(info.leaders[alienName]))
+            }
+        }
+
+        if (info.followers.length) {
+            followerSelector.textContent = "";
+            for (const alienName in info.followers) {
+                followerSelector.appendChild(this._createFollowerLeader(info.followers[alienName]))
+            }
+        }
+    }
+
     _recreateContents() {
         if (!this.enemyId) {
             this.innerHTML = "";
@@ -419,6 +452,7 @@ class EnemyInfobox extends HTMLElement {
             this._populateStats(template, enemyStats);
             this._populateSubtitle(template, this.#enemy);
             this._populateUnitTypes(template, this.#enemy);
+            this._populateEncounters(template, this.enemyId);
 
             this._showHideMiniFields(template);
 
@@ -434,7 +468,7 @@ class EnemyInfobox extends HTMLElement {
             template.querySelector("#kill-rewards-heading"),
             template.querySelector("#kill-rewards"),
             template.querySelector("#capture-rewards-heading"),
-            template.querySelector("#capture-rewards")
+            template.querySelector("#capture-rewards"),
         ];
 
         const hideInTiny = [
@@ -444,7 +478,8 @@ class EnemyInfobox extends HTMLElement {
             template.querySelector("#enemy-infobox-perks-container"),
             template.querySelector("#enemy-infobox-perks-heading"),
             template.querySelector(".enemy-infobox-stats-container"),
-            template.querySelector("#enemy-infobox-stats-heading")
+            template.querySelector("#enemy-infobox-stats-heading"),
+            template.querySelector("#enemy-spawn-info"),
         ]
 
         for (const elem of hideInMini) {

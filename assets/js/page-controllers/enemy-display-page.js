@@ -435,6 +435,82 @@ class EnemyDisplayPage extends AppPage {
         }
     }
 
+    _generateFollowersGrid(container, encounterList, heading) {
+        if (!encounterList) {
+            return;
+        }
+        const header = document.createElement("h4");
+        header.textContent = heading;
+        container.appendChild(header);
+
+        if (encounterList.normal_spawn) {
+            const normal_spawn_text = document.createElement("p");
+            normal_spawn_text.textContent = `Chance to Spawn (Normal): ${(encounterList.normal_spawn * 100).toFixed(2)}%`;
+            container.appendChild(normal_spawn_text);
+        }
+        if (encounterList.terror_spawn) {
+            const terror_spawn_text = document.createElement("p");
+            terror_spawn_text.textContent = `Chance to Spawn (Terror): ${(encounterList.terror_spawn * 100).toFixed(2)}%`;
+            container.appendChild(terror_spawn_text);
+        }
+
+        const columns = [
+            {
+                key: "supports",
+                header: "Generic Supports",
+                size: "100px"
+            },
+            {
+                key: "adjutant",
+                header: "Adjutant",
+                size: "100px"
+            },
+            {
+                key: "navigators",
+                header: "Navigators",
+                size: "100px"
+            },
+        ];
+
+        
+        // Get values for the header row and column sizes
+        const headers = [], sizes = [];
+        for (const column of columns) {
+            headers.push(column.header);
+            sizes.push(column.size || "50px");
+        }
+
+        let idx = 0;
+        const values = [];
+        while (true) {
+            const row = [];
+            Object.values(columns).forEach((c) => {
+                if (encounterList[c.key] && encounterList[c.key].length > idx) {
+                    let n = encounterList[c.key][idx].alien;
+                    const alienEntry = DataHelper.enemies[n];
+                    if (alienEntry && alienEntry.name) {
+                        n = alienEntry.name;
+                    }
+                    row.push(`${n} (${(encounterList[c.key][idx].chance * 100).toFixed(2)}%)`);
+                } else {
+                    row.push("");
+                }
+            });
+
+            if (row.every((r) => r.length == 0)) {
+                break;
+            }
+
+            row.forEach((r) => values.push(r));
+            idx += 1;
+        }
+
+        const grid = Utils.createGrid(headers, sizes, values);
+        grid.classList.add("enemy-upgrades-container");
+
+        container.appendChild(grid);
+    }
+
     _populateGrids(container) {
         const enemy = DataHelper.enemies[this.#enemyId];
 
@@ -491,6 +567,29 @@ class EnemyDisplayPage extends AppPage {
         else {
             container.querySelector("#enemy-pit-leader-upgrades-not-available").classList.remove("hidden-collapse");
             container.querySelector("#enemy-pit-leader-upgrades-info").classList.add("hidden-collapse");
+        }
+
+        const deployments = DataHelper.deploymentsForAlienResearch(EnemyDisplayPage.currentResearch);
+        const deploymentGroups = DataHelper.deploymentsData.groups;
+        const groupDeploymentNames = Object.keys(deploymentGroups).filter((g) => deploymentGroups[g].includes(enemy.id));
+
+        const mainEncounter = deployments.aliens[enemy.id];
+        const additionalEncounters = groupDeploymentNames.map((g) => deployments.aliens[g]).filter((g) => g) || [];
+
+        if (mainEncounter || additionalEncounters.length) {
+            const containerSelector = "#enemy-pit-followers-info-container";
+            const gridContainer = container.querySelector(containerSelector);
+
+            this._generateFollowersGrid(gridContainer, mainEncounter, enemy.name);
+            for (let idx = 0; idx < additionalEncounters.length; ++idx) {
+                this._generateFollowersGrid(gridContainer, additionalEncounters[idx], `${enemy.name} (Variant Pod ${idx + 1})`);
+            }
+            container.querySelector("#enemy-pit-followers-not-available").classList.add("hidden-collapse");
+            container.querySelector("#enemy-pit-followers-info").classList.remove("hidden-collapse");
+        } 
+        else {
+            container.querySelector("#enemy-pit-followers-not-available").classList.remove("hidden-collapse");
+            container.querySelector("#enemy-pit-followers-info").classList.add("hidden-collapse");
         }
     }
 

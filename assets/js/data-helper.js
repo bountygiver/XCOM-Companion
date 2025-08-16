@@ -4,6 +4,7 @@ import * as Utils from "./utils.js";
 const baseFacilityData = await fetch("assets/data/base-facilities.json").then(response => response.json());
 const councilRequestData = await fetch("assets/data/council-requests.json").then(response => response.json());
 const enemyData = await fetch("assets/data/enemies.json").then(response => response.json());
+const deploymentsData = await fetch("assets/data/enemy_deployments.json").then(response => response.json());
 const foundryProjectData = await fetch("assets/data/foundry-projects.json").then(response => response.json());
 const geneModData = await fetch("assets/data/gene-mods.json").then(response => response.json());
 const itemData = await fetch("assets/data/items.json").then(response => response.json());
@@ -593,6 +594,84 @@ function getResearchCreditSource(creditType) {
     return null;
 }
 
+function expandDeployment(deploymentList) {
+    if (!deploymentList) {
+        return [];
+    }
+
+    return deploymentList.flatMap((f) => {
+        const groupMatch = deploymentsData.groups[f.alien];
+        if (!groupMatch) {
+            return f;
+        }
+
+        return groupMatch.map((a) => {
+            return {
+                "chance": f.chance / groupMatch.length,
+                "alien": a
+            }
+        });
+    });
+}
+
+function expandEncounterEntry(encounterEntry) {
+    encounterEntry.supports = expandDeployment(encounterEntry.supports);
+    encounterEntry.adjutant = expandDeployment(encounterEntry.adjutant);
+    encounterEntry.navigators = expandDeployment(encounterEntry.navigators);
+}
+
+function deploymentsForAlienResearch(alienResearch) {
+    const arInt = parseInt(alienResearch);
+    if (arInt == NaN) {
+        return [];
+    }
+
+    const deployments = deploymentsData.deployments.filter((d) => d.alien_research < arInt).reduce((p, c) => {
+        if (c.alien_research > p.alien_research) {
+            return c;
+        }
+        return p;
+    }) || [];
+
+    if (deployments.aliens) {
+        Object.keys(deployments.aliens).forEach((a) => {
+            expandEncounterEntry(deployments.aliens[a]);
+        })
+    }
+
+    return deployments;
+}
+
+function uniqNotNull(a) {
+    return a.filter((v, i) => v && a.indexOf(v) === i);
+}
+
+function expandEncounterGroups(nameList) {
+    return uniqNotNull(nameList.flatMap((v) => deploymentsData.groups[v] || v));
+}
+
+function encounterMatches(alienName) {
+    return [alienName, ...Object.entries(deploymentsData.groups).filter(([_, v]) => v.includes(alienName)).map(([n, _]) => n)];
+}
+
+function deploymentFollowers(deployment) {
+    if (!deployment) {
+        return [];
+    }
+    return uniqNotNull([deployment.supports, deployment.adjutant, deployment.navigators].flat().map((s) => s.alien));
+}
+
+function deploymentPossibleFollowerLeader(alienName, alienResearch) {
+    const nameMatches = encounterMatches(alienName);
+    let deployments = deploymentsData.deployments;
+    if (alienResearch != null) {
+        deployments = [deploymentsForAlienResearch(alienResearch)];
+    }
+    const followers = deployments.flatMap((m) => nameMatches.flatMap((n) => deploymentFollowers(m.aliens[n])));
+    const leaders = deployments.map((m) => Object.entries(m.aliens).filter(([_, d]) => nameMatches.some((n) => deploymentFollowers(d).includes(n))).map(([leader, _]) => leader)).flat(Infinity);
+    return {leaders: expandEncounterGroups(leaders), followers: expandEncounterGroups(followers)};
+}
+
 function typeOf(dataObject) {
     const id = typeof(dataObject) === "string" ? dataObject : dataObject.id;
 
@@ -626,6 +705,9 @@ export {
     councilRequests,
     countries,
     dataObjectById,
+    deploymentsData,
+    deploymentsForAlienResearch,
+    deploymentPossibleFollowerLeader,
     enemies,
     enemyDamageRanges,
     foundryProjects,
