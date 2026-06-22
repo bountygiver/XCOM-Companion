@@ -42,7 +42,8 @@
                 "or": {
                     "category": [
                         "saw",
-                        "lmg"
+                        "lmg",
+                        "rocket_launcher"
                     ],
                     "type": ["loadout_equipment"]
                 }
@@ -281,7 +282,10 @@
                 "type": [
                     "loadout_primary"
                 ]
-            }
+            },
+            "disables": [
+                "Mayhem"
+            ]
         },
         {
             "name": "Shredder Rocket",
