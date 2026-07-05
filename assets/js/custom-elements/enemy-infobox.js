@@ -395,13 +395,20 @@ class EnemyInfobox extends HTMLElement {
         unitTypesContainer.textContent = types.join(", ");
     }
 
-    _createFollowerLeader(alienName) {
+    _createFollowerLeader(alienName, terror_chance, normal_chance) {
         const div = document.createElement("div");
         div.setAttribute("data-page-on-click", "enemy-display-page");
         div.setAttribute("data-pagearg-enemy-id", alienName);
         const alienData = DataHelper.enemies[alienName];
         if (alienData) {
-            Utils.appendElement(div, "div", alienData.name, { attributes: { "data-page-on-click": "enemy-display-page", "data-pagearg-enemy-id": alienName, "style": "cursor: pointer;" } });
+            const alienNameData = [alienData.name];
+            if (terror_chance) {
+                alienNameData.push(`T:${(terror_chance * 100).toFixed(0)}%`);
+            }
+            if (normal_chance) {
+                alienNameData.push(`N:${(normal_chance * 100).toFixed(0)}%`);
+            }
+            Utils.appendElement(div, "div", alienNameData.join(" "), { attributes: { "data-page-on-click": "enemy-display-page", "data-pagearg-enemy-id": alienName, "style": "cursor: pointer;" } });
         }
 
         return div;
@@ -413,18 +420,24 @@ class EnemyInfobox extends HTMLElement {
 
         const info = DataHelper.deploymentPossibleFollowerLeader(enemyName, this.alienResearch || null);
 
-        if (info.leaders.length) {
-            leadersSelector.textContent = "";
+        if (Object.keys(info.leaders).length) {
+            leadersSelector.innerHTML = "";
             for (const alienName in info.leaders) {
-                leadersSelector.appendChild(this._createFollowerLeader(info.leaders[alienName]))
+                leadersSelector.appendChild(this._createFollowerLeader(alienName, info.leaders[alienName].terror, info.leaders[alienName].normal))
             }
+        }
+        else {
+            leadersSelector.innerHTML = "Cannot be spawned as pod leader";
         }
 
         if (info.followers.length) {
-            followerSelector.textContent = "";
+            followerSelector.innerHTML = "";
             for (const alienName in info.followers) {
                 followerSelector.appendChild(this._createFollowerLeader(info.followers[alienName]))
             }
+        }
+        else {
+            followerSelector.innerHTML = "Cannot be spawned as pod follower";
         }
     }
 

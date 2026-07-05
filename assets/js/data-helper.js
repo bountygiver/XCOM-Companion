@@ -663,13 +663,37 @@ function deploymentFollowers(deployment) {
 
 function deploymentPossibleFollowerLeader(alienName, alienResearch) {
     const nameMatches = encounterMatches(alienName);
+    const hasResearch = alienResearch != null
     let deployments = deploymentsData.deployments;
-    if (alienResearch != null) {
+    if (hasResearch) {
         deployments = [deploymentsForAlienResearch(alienResearch)];
     }
     const followers = deployments.flatMap((m) => nameMatches.flatMap((n) => deploymentFollowers(m.aliens[n])));
     const leaders = deployments.map((m) => Object.entries(m.aliens).filter(([_, d]) => nameMatches.some((n) => deploymentFollowers(d).includes(n))).map(([leader, _]) => leader)).flat(Infinity);
-    return {leaders: expandEncounterGroups(leaders), followers: expandEncounterGroups(followers)};
+    
+    const leaders_obj = {};
+    expandEncounterGroups(leaders).forEach((leader) => {
+        if (hasResearch) {
+            const leaderMatches = {[leader]: 1};
+            Object.entries(deploymentsData.groups).forEach(([n, v]) => {
+                if (v.includes(alienName)) {
+                    leaderMatches[n] = 1 / v.length;
+                }
+            });
+            leaders_obj[leader] = deployments.flatMap((m) => Object.entries(leaderMatches).map(([n, v]) => ({normal: (m.aliens[n]?.normal_spawn ?? 0) * leaderMatches[n], terror: (m.aliens[n]?.terror_spawn ?? 0) * leaderMatches[n]}))).reduce((p, c) => ({normal: p.normal + c.normal, terror: p.terror + c.terror}), {normal: 0, terror: 0});
+        } else {
+            leaders_obj[leader] = {};
+        }
+    });
+    if (hasResearch) {
+        const {normal, terror} = Object.values(leaders_obj).reduce((p, c) => ({normal: p.normal + c.normal, terror: p.terror + c.terror }), {normal: 0, terror: 0});
+        Object.keys(leaders_obj).forEach((k) => {
+            leaders_obj[k].normal = leaders_obj[k].normal / normal;
+            leaders_obj[k].terror = leaders_obj[k].terror / terror;
+        });
+    }
+    
+    return {leaders: leaders_obj, followers: expandEncounterGroups(followers)};
 }
 
 function typeOf(dataObject) {

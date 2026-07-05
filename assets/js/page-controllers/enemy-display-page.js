@@ -579,6 +579,7 @@ class EnemyDisplayPage extends AppPage {
         if (mainEncounter || additionalEncounters.length) {
             const containerSelector = "#enemy-pit-followers-info-container";
             const gridContainer = container.querySelector(containerSelector);
+            gridContainer.innerHTML = "";
 
             this._generateFollowersGrid(gridContainer, mainEncounter, enemy.name);
             for (let idx = 0; idx < additionalEncounters.length; ++idx) {
