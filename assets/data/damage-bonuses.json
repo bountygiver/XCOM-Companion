@@ -69,34 +69,27 @@
             "icon": "assets/img/perk-icons/in_the_zone.png"
         },
         {
-            "name": "Sapper (AP/HE)",
+            "name": "Sapper",
             "flat": 1,
             "category": "perk",
             "icon": "assets/img/perk-icons/sapper.png",
             "requires": {
                 "id": [
                     "item_he_grenade",
-                    "item_ap_grenade"
+                    "item_ap_grenade",
+                    "item_alien_grenade",
+                    "item_grenade_launcher",
+                    "item_proximity_mine_launcher"
                 ]
             }
         },
         {
-            "name": "Sapper (Plasma)",
-            "flat": 2,
-            "category": "perk",
-            "requires": {
-                "id": [
-                    "item_alien_grenade"
-                ]
-            },
-            "icon": "assets/img/perk-icons/sapper.png"
-        },
-        {
-            "name": "Alien Grenades (AP Grenades Only)",
+            "name": "Alien Grenades (Research)",
             "flat": 2,
             "category": "upgrade",
             "requires": {
                 "id": [
+                    "item_grenade_launcher",
                     "item_ap_grenade"
                 ]
             },
@@ -166,6 +159,41 @@
                     "item_particle_cannon"
                  ]
             }
+        },
+        {
+            "name": "The Thumper",
+            "flat": 3,
+            "category": "equipment",
+            "requires": {
+                "id": [
+                    "item_kinetic_strike_module"
+                ]
+            },
+            "icon": "assets/img/item-icons/the_thumper.png"
+        },
+        {
+            "name": "Extra Kinetic Strike Modules",
+            "adjustable": true,
+            "max": 6,
+            "step": 3,
+            "category": "equipment",
+            "requires": {
+                "id": [
+                    "item_kinetic_strike_module"
+                ]
+            },
+            "icon": "assets/img/item-icons/kinetic_strike_module.png"
+        },
+        {
+            "name": "MEC Close Combat",
+            "flat": 4,
+            "category": "upgrade",
+            "requires": {
+                "id": [
+                    "item_kinetic_strike_module"
+                ]
+            },
+            "icon": "assets/img/foundry-icons/mec_close_combat.png"
         }
     ],
     "mwd_crit_bonuses": [
@@ -401,6 +429,13 @@
     ],
     "dr_pierce": [
         {
+            "name": "Acided",
+            "min": 3,
+            "percentage": 0.5,
+            "category": "perk",
+            "icon": "assets/img/perk-icons/acid_spit.png"
+        },
+        {
             "name": "Combined Arms",
             "flat": 1.0,
             "category": "perk",
@@ -444,13 +479,6 @@
             }
         },
         {
-            "name": "Acided",
-            "min": 3,
-            "percentage": 0.5,
-            "category": "perk",
-            "icon": "assets/img/perk-icons/acid_spit.png"
-        },
-        {
             "name": "Breaching Ammo",
             "category": "equipment",
             "override_shotgun": true,
@@ -482,14 +510,22 @@
             "icon": "assets/img/perk-icons/heat_ammo.png",
             "requires": {
                 "or": {
-                    "type": ["loadout_primary"],
+                    "and": {
+                        "type": ["loadout_primary"],
+                        "not": {
+                            "category": [
+                                "shotgun"
+                            ]
+                        }
+                    },
                     "category": [
                         "rocket_launcher"
                     ],
                     "id": [
                         "item_grenade_launcher",
                         "item_proximity_mine_launcher"
-                    ]
+                    ],
+                    "type": ["loadout_equipment"]
                 }
             }
         },

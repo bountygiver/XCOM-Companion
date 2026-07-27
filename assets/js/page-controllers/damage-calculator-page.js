@@ -52,7 +52,11 @@ class DamageCalculatorPage extends AppPage {
             for (const dr of Object.keys(this.currentResults[value])) {
                 const dmgBase = document.createElement("td");
                 const rolledDmg = parseInt(value) + parseInt(dr);
-                dmgBase.append(rolledDmg);
+                if (parseInt(dr) >= rolledDmg) {
+                    dmgBase.append(`<=${rolledDmg}`);
+                } else {
+                    dmgBase.append(rolledDmg);
+                }
                 tr.append(dmgBase);
                 resultTable.append(tr);
                 const drtd = document.createElement("td");
@@ -251,7 +255,7 @@ class DamageCalculatorPage extends AppPage {
 
         const critchance = parseInt(this.#simulatorPage.querySelector("#damage-form-preview-crit-chance").value) || 0;
 
-        this.currentResults = dmg_simulate(bwd, mwdmod, critchance, mwd_crit, effectiveBonuses, flat_dr_sum + armor_dr, formData.get("damage-cover"), effectiveBonusesTarget, formData.get("explosive") === "true");
+        this.currentResults = dmg_simulate(bwd, mwdmod, critchance, mwd_crit, effectiveBonuses, flat_dr_sum + armor_dr, formData.get("damage-cover"), effectiveBonusesTarget, formData.get("explosive") === "true", selectedWeapon === "item_kinetic_strike_module");
     }
 
     static reqCheck(requirements, itemName, item) {
@@ -260,6 +264,8 @@ class DamageCalculatorPage extends AppPage {
         const reqChecker = function([reqKey, reqVal]) {
             if (reqKey === "or") {
                 return Object.entries(reqVal).some(reqChecker);
+            } else if (reqKey === "and") {
+                return Object.entries(reqVal).every(reqChecker);
             } else if (reqKey === "not") {
                 return !Object.entries(reqVal).every(reqChecker);
             }
@@ -377,6 +383,9 @@ class DamageCalculatorPage extends AppPage {
                 }
                 if (perk.max !== undefined) {
                     asj.max = parseInt(perk.max);
+                }
+                if (perk.step !== undefined) {
+                    asj.step = parseInt(perk.step);
                 }
                 if (asj.min > asj.value) {
                     asj.value = asj.min;

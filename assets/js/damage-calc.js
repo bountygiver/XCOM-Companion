@@ -95,7 +95,7 @@ function damage_dice(dmg) {
     }
   }
 
-  export function dmg_simulate(bwd, mwd_mod, critchance, critbonuses, bonuses, flat_dr, cover, targetBonuses, explosive) {
+  export function dmg_simulate(bwd, mwd_mod, critchance, critbonuses, bonuses, flat_dr, cover, targetBonuses, explosive, ksm) {
     const dmg_rolls = dmg_range(bwd + mwd_mod, critbonuses);
     const dmg_chances = {};
     const crit_fixed = (parseInt(critchance) || 0) / 100;
@@ -111,6 +111,7 @@ function damage_dice(dmg) {
     });
     if (critchance) {
       Object.entries(dmg_rolls.crit).forEach(([dmg, chance]) => {
+        dmg = parseInt(dmg);
         if (explosive) {
           add_chance(dmg - 1, chance * 0.33 * crit_fixed, dmg_chances);
           add_chance(dmg, chance * 0.34 * crit_fixed, dmg_chances);
@@ -141,7 +142,7 @@ function damage_dice(dmg) {
     const cover_dr = targetBonuses.filter(b => b.bonuscat === "cover_dr");
     const dmg_table = Object.entries(dmg_chances).map(([dmg, pct]) => {
       dmg = parseFloat(dmg);
-      let net_dmg = Math.max(0, dmg - current_dr);
+      let net_dmg = dmg - current_dr;
       percent_dr.forEach((dr) => {
         if (dr.dmg_mod) {
           if (dr.dmg_mod < 0) {
@@ -256,6 +257,8 @@ function damage_dice(dmg) {
 
       if (Math.floor(c.eff_dr) === c.eff_dr) {
         addDamage(c.eff_dr, c.pct);
+      } else if (ksm) {
+        addDamage(Math.ceil(c.eff_dr), c.pct);
       } else {
         const floorP = c.eff_dr % 1;
         addDamage(Math.floor(c.eff_dr), c.pct * (1 - floorP));
