@@ -490,7 +490,7 @@ class DamageCalculatorPage extends AppPage {
         const flar_dr_perks = flat_dr_equipments.map(([_, b]) => { 
             const equipment_flat_dr_item = {
                 "name": b.name,
-                "value": b.type_specific_data.damage_reduction,
+                "flat": b.type_specific_data.damage_reduction,
                 "category": "equipment",
                 "icon": b.icon,
                 "bonuscat": "flat_dr"
